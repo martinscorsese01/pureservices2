@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <div className="pt-20">
-      {/* Page Header*/}
+      {/* Page Header */}
       <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
