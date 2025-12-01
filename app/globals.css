@@ -12,5 +12,18 @@
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* Ensure gradient text renders properly */
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Prevent text overflow */
+  .break-words {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 }
 
