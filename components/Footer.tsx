@@ -28,9 +28,9 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-xl sm:text-2xl mb-4 text-cyan-400">Contact</h3>
             <ul className="space-y-3 text-base sm:text-lg text-gray-300 font-medium">
-              <li>Phone: [Your Phone Number]</li>
-              <li>Email: [Your Email]</li>
-              <li>WhatsApp: [Your WhatsApp]</li>
+              <li>Phone: +44 7588 523 552</li>
+              <li>Email: pureservicesltd@gmail.com</li>
+              <li>WhatsApp: +44 7588 523 552</li>
             </ul>
           </div>
         </div>

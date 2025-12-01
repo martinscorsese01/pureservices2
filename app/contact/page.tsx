@@ -103,7 +103,7 @@ ${formData.message}
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-beige-500 focus:border-transparent outline-none transition-all"
-                    placeholder="+44 7588 523 552"
+                    placeholder="+44 7XXXXXXXXX"
                   />
                 </div>
                 <div>
@@ -171,23 +171,9 @@ ${formData.message}
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                      <a href="mailto:[Your Email]" className="text-gray-600 hover:text-beige-600 transition-colors">
-                        [Your Email]
+                      <a href="mailto:pureservicesltd@gmail.com" className="text-gray-600 hover:text-beige-600 transition-colors">
+                        pureservicesltd@gmail.com
                       </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-beige-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                      <svg className="w-6 h-6 text-beige-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Areas Covered</h3>
-                      <p className="text-gray-600">
-                        [Your Service Areas]
-                      </p>
                     </div>
                   </div>
                 </div>
