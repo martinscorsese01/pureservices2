@@ -19,9 +19,23 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    // You can add API call or email service integration here
+
+    // Open WhatsApp chat with pre-filled message
+    const whatsappNumber = '447588523552' // +44 7588 523 552 in international format without +
+
+    const message = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Project details:
+${formData.message}
+    `.trim()
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+    if (typeof window !== 'undefined') {
+      window.location.href = url
+    }
   }
 
   return (
@@ -89,7 +103,7 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-beige-500 focus:border-transparent outline-none transition-all"
-                    placeholder="Your phone number"
+                    placeholder="+44 7588 523 552"
                   />
                 </div>
                 <div>
@@ -131,8 +145,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                      <a href="tel:[Your Phone Number]" className="text-gray-600 hover:text-beige-600 transition-colors">
-                        [Your Phone Number]
+                      <a href="tel:+447588523552" className="text-gray-600 hover:text-beige-600 transition-colors">
+                        +44 7588 523 552
                       </a>
                     </div>
                   </div>
@@ -144,8 +158,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">WhatsApp</h3>
-                      <a href="https://wa.me/[Your WhatsApp Number]" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-beige-600 transition-colors">
-                        [Your WhatsApp Number]
+                      <a href="https://wa.me/447588523552" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-beige-600 transition-colors">
+                        +44 7588 523 552
                       </a>
                     </div>
                   </div>
