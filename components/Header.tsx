@@ -18,10 +18,22 @@ export default function Header() {
           {/* Navigation */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
             <Link 
+              href="/about" 
+              className="text-lg lg:text-xl font-bold text-gray-800 hover:text-blue-600 transition-all"
+            >
+              ABOUT
+            </Link>
+            <Link 
               href="/services" 
               className="text-lg lg:text-xl font-bold text-gray-800 hover:text-blue-600 transition-all"
             >
               SERVICES
+            </Link>
+            <Link 
+              href="/before-after" 
+              className="text-lg lg:text-xl font-bold text-gray-800 hover:text-blue-600 transition-all"
+            >
+              BEFORE & AFTER
             </Link>
             <Link 
               href="/contact" 
